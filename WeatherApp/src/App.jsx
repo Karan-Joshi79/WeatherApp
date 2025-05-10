@@ -1,5 +1,6 @@
 import { useState } from 'react';
-const API_KEY = "e253179f0bce1fd5668f4776460433c6";
+const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
+
 
 function App() {
   const [city, setCity] = useState('');
